@@ -1,9 +1,9 @@
-import { Text, View } from 'react-native';
+import { Text, View } from 'react-native'
 
 export const EditScreenInfo = ({ path }: { path: string }) => {
-  const title = 'Open up the code for this screen:';
+  const title = 'Open up the code for this screen:'
   const description =
-    'Change any of the text, save the file, and your app will automatically update.';
+    'Change any of the text, save the file, and your app will automatically update.'
 
   return (
     <View>
@@ -15,15 +15,15 @@ export const EditScreenInfo = ({ path }: { path: string }) => {
         <Text className={styles.getStartedText}>{description}</Text>
       </View>
     </View>
-  );
-};
+  )
+}
 
 const styles = {
   codeHighlightContainer: `rounded-md px-1`,
-  getStartedContainer: `items-center mx-12`,
-  getStartedText: `text-lg leading-6 text-center`,
+  getStartedContainer: `items-center text-lime-500 mx-12`,
+  getStartedText: `text-lg text-lime-500 leading-6 text-center`,
   helpContainer: `items-center mx-5 mt-4`,
   helpLink: `py-4`,
-  helpLinkText: `text-center`,
+  helpLinkText: `text-lime-500 text-center`,
   homeScreenFilename: `my-2`,
-};
+}
